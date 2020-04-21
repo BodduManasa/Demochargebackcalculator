@@ -2,7 +2,7 @@ package com.example.chargebackcalcdemo.models;
 
 public class Admin {
   
-  String firstname;
+  private String firstname;
 	@Override
 	public String toString() {
 		return "Admin [firstname=" + firstname + ", lastname=" + lastname + ", age=" + age + ", gender=" + gender
@@ -50,12 +50,12 @@ public class Admin {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	String lastname;
-	int age;
-	String gender;
-	double mobileno;
-	int adminid;
-	String password;
+	private String lastname;
+	private int age;
+	private String gender;
+	private double mobileno;
+	private int adminid;
+	private String password;
 	
 	
 
