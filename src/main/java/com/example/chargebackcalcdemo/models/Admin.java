@@ -3,12 +3,7 @@ package com.example.chargebackcalcdemo.models;
 public class Admin {
   
   String firstname;
-	@Override
-	public String toString() {
-		return "Admin [firstname=" + firstname + ", lastname=" + lastname + ", age=" + age + ", gender=" + gender
-				+ ", mobileno=" + mobileno + ", adminid=" + adminid + ", password=" + password + "]";
-	}
-	public String getFirstname() {
+		public String getFirstname() {
 		return firstname;
 	}
 	public void setFirstname(String firstname) {
@@ -55,7 +50,26 @@ public class Admin {
 	String gender;
 	double mobileno;
 	int adminid;
-	String password;
+	transient String password;
+	public Admin(String firstname, String lastname, int age, String gender, double mobileno, int adminid,
+			String password) {
+		super();
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.age = age;
+		this.gender = gender;
+		this.mobileno = mobileno;
+		this.adminid = adminid;
+		this.password = password;
+	}
+	public Admin() {
+		super();
+	}
+	@Override
+	public String toString() {
+		return "Admin [firstname=" + firstname + ", lastname=" + lastname + ", age=" + age + ", gender=" + gender
+				+ ", mobileno=" + mobileno + ", adminid=" + adminid + "]";
+	}
 	
 	
 

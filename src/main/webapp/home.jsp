@@ -4,12 +4,15 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>ChargeBack Calculator Home Page</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
-
-<a href="#">Admin</a>
-<a href="#">Bank Employee</a>
+<div align="center">
+<a href="#">Admin|</a>
+<a href="#">Bank Employee|</a>
 <a href="#">User</a>
+</div>
 </body>
 </html>
