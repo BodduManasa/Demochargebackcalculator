@@ -1,0 +1,32 @@
+@charset "ISO-8859-1";
+h1{
+	size:15px;
+	text-align: center;
+}
+ul{
+	text-align: center;
+	margin-right: 65px;	
+}
+li{
+	display:inline-table;
+	padding:10px;
+	text-shadow: 0 0 3px #408080;
+ 	font-size:20px;
+	
+}
+li a:hover{
+	color: #b90f53;
+	font-size:25px;
+}
+body{
+	color:black;
+	font-family:serif;
+	background-image:url("proj.jpg");	
+}
+.header{
+	color:#b90f53;
+	width:100%;
+	height:100px;	
+	padding: 20px;	
+}
+
