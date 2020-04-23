@@ -10,9 +10,11 @@
 </head>
 <body>
 <div align="center">
-<a href="#">Admin|</a>
-<a href="#">Bank Employee|</a>
-<a href="#">User</a>
+<ul class="topnav">
+<li><a href="#">Admin|</a></li>
+<li><a href="/employeelogin">Bank Employee|</a></li>
+<li><a href="#">User</a></li>
+</ul>
 </div>
 </body>
 </html>

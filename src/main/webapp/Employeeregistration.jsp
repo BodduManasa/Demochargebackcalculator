@@ -18,7 +18,7 @@ function validation()
 	var Contactnumber=document.forms["employeeregistrationform"]["Contactnumber"];
 	var city=document.forms["employeeregistrationform"]["city"];
 	var state=document.forms["employeeregistrationform"]["state"];
-	var userid=document.forms["employeeregistrationform"]["userid"];
+	var empid=document.forms["employeeregistrationform"]["empid"];
 	var password=document.forms["employeeregistrationform"]["password"];
 	
 	
@@ -79,12 +79,12 @@ function validation()
 		alert("You have selected : "+selectedState);
 		return true;
 		
-		var usrid=/^\d{3}$/ 
-		else if(document.forms.value.match(usrid))
+		var emplid=/^\d{3}$/ 
+		else if(document.forms.value.match(emplid))
 			{
 		
-			window.alert("Please enter valid userid");
-			userid.focus();
+			window.alert("Please enter valid empid");
+			empid.focus();
 			return false;
 
 			}
@@ -110,7 +110,7 @@ function validation()
 <!-- Form  -->
 <div align="center">
 <div class="forms-data">
-<form:form name="employeeregistrationform" action="#" method="post" modelAttribute="empreg" onsubmit="return validation()" style="margin-top:50px;">
+<form:form name="employeeregistrationform" action="/empreg" method="post" modelAttribute="employeereg" onsubmit="return validation()" style="margin-top:50px;">
 <table>
 <tr>
 <td>FirstName :</td>
@@ -203,11 +203,11 @@ Others: <form:radiobutton path="gender" value="others" label="others" class="for
 </td>
 </tr>
 <tr>
-<td>UerId :</td>
+<td>EmployeeId :</td>
 <td>
-<form:input path="userid" class="form-control"/>
+<form:input path="empid" class="form-control"/>
 <br>
-<form:errors path="userid" cssClass="errors"></form:errors>
+<form:errors path="empid" cssClass="errors"></form:errors>
 </td>
 </tr>
 <tr>
@@ -223,6 +223,11 @@ Others: <form:radiobutton path="gender" value="others" label="others" class="for
 </table>
 </form:form>
 </div>
+<br>
+<br>
+<br>
+<span>Already Registered? </span><a href="employeelogin">Register</a>
+<br>
 <a href="/">Home</a>
 </div>
 </body>

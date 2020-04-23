@@ -2,18 +2,34 @@ package com.example.chargebackcalcdemo.models;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+@Entity
+@Table(name="Employee")
+
 public class Employee implements Serializable{
 
 	private static final long serialVersionUID = 1L;
-	
+	@Column
 	String firstname;
+	@Column
 	String laststname;
+	@Column
 	int age;
+	@Column
 	String gender;
+	@Column
 	long Contactnumber;
+	@Column
 	String city;
+	@Column
 	String state;
+	@Id
+	@Column
 	int empid;
+	@Column
 	transient String password;
 	public String getFirstname() {
 		return firstname;
